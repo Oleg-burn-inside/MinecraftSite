@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/*
+body {
+    display: grid;
+    grid-template-rows: ;
+}
+*/
+
+header {
+    background-image: url("grass.png");
+    background-position: center center;
+    background-size: contain;    
+    width: 100%;
+    height: 20vh;
+}
+
+.dirt {
+    background-image: url("dirt.png");
+    background-position: center center;
+    background-size: contain;
+    width: 100%;
+    height: 20vh;
+}
+
+
+
+
+  .wrapper {
+    background-image: url("stone.png");
+    background-position: center center;
+    background-size: 20vh;
+    height: 100vh;
+  }
+  
+  .card {
+    width: 20vh;
+    height: 20vh;
+    cursor: pointer;
+    transform: translate(-50%, -50%);
+  }
+  
+  .card:hover .front {
+    transform: perspective(600px) rotateY(-180deg);
+  }
+  
+  .card:hover .back {
+    transform: perspective(600px) rotateY(0);
+  }
+  
+  .front,
+  .back {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: transform 0.5s ease;
+    background-image: url("diamond_block.png");
+    background-size: 20vh;
+  }
+  
+  .front {
+    transform: perspective(600px) rotateY(0);
+  }
+  
+  .front img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .back {
+    transform: perspective(600px) rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .back h1 {
+    color: #444;
+    font-size: 24px;
+  }
+  
+  .back h1 span {
+    display: block;
+    font-size: 2vh;
+    font-weight: 300;
+    margin: 5px 0 10px;
+  }
+  
+  .back .socials {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .back .socials a {
+    color: #444;
+    display: inline-flex;
+    width: 3vh;
+    height: 3vh;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vh;
+    border-radius: 50%;
+    transition: 0.4s ease;
+  }
+  
+  .back .socials a:hover {
+    background-color: #444;
+    color: #fff;
+  }
