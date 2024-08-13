@@ -7,62 +7,112 @@
   <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <header class="grass">
-        <div class="card">
-
-        </div>
-    </header>
+    <header class="grass"></header>
     <div class="dirt"></div>
     <div class="stone">
-        <div id="coal" class="card">
-            <div class="front">
-                <img src="coal_ore.png" alt="Coal Ore">
+        <div id="coal" class="container">
+            <div class="ore_block">
+                <div id="coal" class="bit bit_1"></div>
+                <div id="coal" class="bit bit_2"></div>
+                <div id="coal" class="bit bit_3"></div>
+                <div id="coal" class="bit bit_4"></div>
+                <div id="coal" class="bit bit_5"></div>
             </div>
-            <div class="back">
-                <div style="background-image: url('./coal_block.png');" class="ore_block"></div>
+            <div id="coal" class="info">
+                <h1>Майнкрафт зомби-апокалипсис</h1>
+                <p>Выживай в заброшенных городах с огнестрелом, защищайся от ночных волн, строй роботов для обороны.</p>
             </div>
+            <div id="coal" class="ore"></div>
         </div>
-        <div id="iron" class="card">
-            <div class="front">
-                <img src="iron_ore.png" alt="Iron Ore">
+        <div id="iron" class="container">
+            <div class="ore_block">
+                <div id="iron" class="bit bit_1"></div>
+                <div id="iron" class="bit bit_2"></div>
+                <div id="iron" class="bit bit_3"></div>
+                <div id="iron" class="bit bit_4"></div>
+                <div id="iron" class="bit bit_5"></div>
             </div>
-            <div class="back">
-                <div style="background-image: url('./iron_block.png');" class="ore_block"></div>
+            <div id="iron" class="info">
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Video Overview</a>
             </div>
+            <div id="iron" class="ore"></div>
         </div>
-        <div id="gold" class="card">
-            <div class="front">
-                <img src="gold_ore.png" alt="Gold Ore">
+        <div id="gold" class="container">
+            <div class="ore_block">
+                <div id="gold" class="bit bit_1"></div>
+                <div id="gold" class="bit bit_2"></div>
+                <div id="gold" class="bit bit_3"></div>
+                <div id="gold" class="bit bit_4"></div>
+                <div id="gold" class="bit bit_5"></div>
             </div>
-            <div class="back">
-                <div style="background-image: url('./gold_block.png');" class="ore_block"></div>
+                <div id="gold" class="info">
+                    <a href="https://drive.google.com/uc?export=download&id=1xCOZikwCwz5ihQLDo-IkE6B9IP5f5hk_" download>Mods Download</a>
             </div>
+            <div id="gold" class="ore"></div>
         </div>
-        <div id="lapis" class="card">
-            <div class="front">
-                <img src="lapis_ore.png" alt="Lapis Ore">
+        <div id="lapis" class="container">
+            <div class="ore_block">
+                <div id="lapis" class="bit bit_1"></div>
+                <div id="lapis" class="bit bit_2"></div>
+                <div id="lapis" class="bit bit_3"></div>
+                <div id="lapis" class="bit bit_4"></div>
+                <div id="lapis" class="bit bit_5"></div>
             </div>
-            <div class="back">
-                <div style="background-image: url('./lapis_block.png');" class="ore_block"></div>
+            <div id="lapis" class="info">
+                <h1>Детали про Сборку</h1>
+                <p>Версия - 1.20.1</br>
+                    Forge - 47.2.32</br>
+                    Optifine - Обязательно отсутствует
+                </p>
             </div>
+            <div id="lapis" class="ore"></div>
         </div>
-        <div id="redstone" class="card">
-            <div class="front">
-                <img src="redstone_ore.png" alt="Redstone Ore">
+        <div id="redstone" class="container">
+            <div class="ore_block">
+                <div id="redstone" class="bit bit_1"></div>
+                <div id="redstone" class="bit bit_2"></div>
+                <div id="redstone" class="bit bit_3"></div>
+                <div id="redstone" class="bit bit_4"></div>
+                <div id="redstone" class="bit bit_5"></div>
             </div>
-            <div class="back">
-                <div style="background-image: url('./redstone_block.png');" class="ore_block"></div>
+            <div id="redstone" class="info">
+                <h1>Как Зайти На Сервер</h1>
+                <p>1. Скачать Архив с модами</br>
+                    2. Расспаковать в папку AppData\Roaming\.minecraft\mods</br>
+                    3. Запустить Игру</br>
+                    4. В настройках мода Physics, отключить физику блоков</br>
+                    5. Добавить сервер с скопированным IP Сервера</br>
+                    6. Зайти и играть ^^
+                </p>
             </div>
+            <div id="redstone" class="ore"></div>
         </div>
-        <div id="diamond" class="card">
-            <div class="front">
-                <img src="diamond_ore.png" alt="Diamond Ore">
+        <div id="diamond" class="container">
+            <div class="ore_block">
+                <div id="diamond" class="bit bit_1"></div>
+                <div id="diamond" class="bit bit_2"></div>
+                <div id="diamond" class="bit bit_3"></div>
+                <div id="diamond" class="bit bit_4"></div>
+                <div id="diamond" class="bit bit_5"></div>
             </div>
-            <div class="back">
-                <div style="background-image: url('./diamond_block.png');" class="ore_block"></div>
+            <div id="diamond" class="info">
+                <button class="button" id="copyButton" onclick="copyButtonText()">ZombiePizdec.aternos.me:30718</button>
             </div>
+            <div id="diamond" class="ore"></div>
         </div>
     </div>
     <footer class="bedrock"></footer>
+    <script>
+      function copyButtonText() {
+        const button = document.getElementById('copyButton');
+        const text = button.innerText;
+  
+        navigator.clipboard.writeText(text).then(() => {
+          alert('Айпи Сервера был скопирован');
+        }).catch(err => {
+          console.error('Ошибка при копировании текста: ', err);
+        });
+      }
+    </script>
 </body>
 </html>
