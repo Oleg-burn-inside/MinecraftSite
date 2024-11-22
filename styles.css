@@ -456,7 +456,7 @@ body {
   left: -17%;
   overflow: hidden;
   transform: scale(0);
-  transition: transform 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 #iron.info a{
   position: absolute;
@@ -492,7 +492,7 @@ body {
   left: -17%;
   overflow: hidden;
   transform: scale(0);
-  transition: transform 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 #gold.info a{
   position: absolute;
@@ -600,7 +600,7 @@ body {
   left: -17%;
   overflow: hidden;
   transform: scale(0);
-  transition: transform 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 #emerald.info a{
   position: absolute;
