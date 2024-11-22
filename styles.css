@@ -633,7 +633,7 @@ body {
   background-image: url("./ip_button_container.png");
   background-size: 100% 100%;
   top: 20%;
-  left: -50%;
+  left: -40%;
   border: none; /* Добавлено для удаления границы */
   transform: scale(0);
   transition: transform 0.5s ease-in-out;
